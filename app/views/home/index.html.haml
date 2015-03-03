@@ -1,0 +1,31 @@
+.row
+  / Side Bar
+  .large-4.small-12.columns
+    =image_tag('logo.jpg')
+    .hide-for-small.panel
+      %h3 #{APP_CONFIG[:tagline]}
+      %h5.subheader
+        #{APP_CONFIG[:promo_text]}
+    %a{:href => "#"}
+    .panel.callout.radius
+      %h6 99&nbsp; items in your cart
+  / End Side Bar
+  / Thumbnails
+  .large-8.columns
+    .row
+      -@items.each do |item|
+        = render partial: 'shared/item_listing', locals: {item: item}
+    / End Thumbnails
+    / Managed By
+    -#.row
+      .large-12.columns
+        .panel
+          .row
+            .large-2.small-6.columns
+              %img{:src => "http://placehold.it/300x300&text=Site Owner"}/
+            .large-10.small-6.columns
+              %strong This Site Is Managed By
+              %hr/
+              Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+      / End Managed By
+

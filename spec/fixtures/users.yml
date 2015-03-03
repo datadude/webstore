@@ -1,0 +1,34 @@
+one:
+  id: 1
+  email: rob@rob-martin.net
+  encrypted_password: $2a$10$Bf9ITXNFUBExLaj0XvIG7u1acg6.TZXgQA3xEhMVcw29/skbAI8UC
+  reset_password_token:
+  reset_password_sent_at:
+  remember_created_at: 2015-01-19 08:52:29.805207
+  sign_in_count: 2
+  current_sign_in_at: 2015-01-19 19:04:23.395754
+  last_sign_in_at: 2015-01-19 08:52:29.8097
+  current_sign_in_ip: 127.0.0.1
+  last_sign_in_ip: 127.0.0.1
+  created_at: 2015-01-19 07:30:58.785365
+  updated_at: 2015-01-19 19:04:23.397206
+  first_name: Robert
+  last_name: Martin
+  role: 1
+two:
+  id: 2
+  email: test@testerson.com
+  encrypted_password: $2a$10$t7XFBZjWeCuqzQuMDgf4R.62L3pP8lb1XdjaFual/tgxhE/xhTDY2
+  reset_password_token:
+  reset_password_sent_at:
+  remember_created_at:
+  sign_in_count: 0
+  current_sign_in_at:
+  last_sign_in_at:
+  current_sign_in_ip:
+  last_sign_in_ip:
+  created_at: 2015-01-19 20:09:23.385715
+  updated_at: 2015-01-19 20:09:23.385715
+  first_name: Test
+  last_name: Testerson
+  role: 0

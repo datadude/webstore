@@ -1,0 +1,85 @@
+.row
+  .large-12.columns
+    / Navigation
+    #banner
+      =image_tag('banner.jpg')
+    .row
+      .large-12.columns
+        %nav.top-bar
+          %ul.title-area
+            / Title Area
+            %li.name
+              %h1
+                %a{:href => "#"}
+                  #{APP_CONFIG[:store_name]}
+            %li.toggle-topbar.menu-icon
+              %a{:href => "#"}
+                %span menu
+          %section.top-bar-section
+            / Right Nav Section
+            %ul.right
+              -# commented out example of dropdown navigation
+                %li.divider
+                %li.has-dropdown
+                  %a{:href => "#"} Main Item 1
+                  %ul.dropdown
+                    %li
+                      %label Section Name
+                    %li.has-dropdown
+                      %a{:href => "#"} Has Dropdown, Level 1
+                      %ul.dropdown
+                        %li
+                          %a{:href => "#"} Dropdown Options
+                        %li
+                          %a{:href => "#"} Dropdown Options
+                        %li
+                          %a{:href => "#"} Level 2
+                        %li
+                          %a{:href => "#"} Subdropdown Option
+                        %li
+                          %a{:href => "#"} Subdropdown Option
+                        %li
+                          %a{:href => "#"} Subdropdown Option
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li.divider
+                    %li
+                      %label Section Name
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li.divider
+                    %li
+                      %a{:href => "#"} See all &rarr;
+              %li.divider
+              %li
+                %a{:href => "#"} Sign on
+
+
+              -# commented out example of dropdown navigation
+                %li.divider
+                %li.has-dropdown
+                  %a{:href => "#"} Main Item 3
+                  %ul.dropdown
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li
+                      %a{:href => "#"} Dropdown Option
+                    %li.divider
+                    %li
+                      %a{:href => "#"} See all &rarr;
+        / End Top Bar
+      / End Navigation
+    -if notice
+      .alert-box.success
+        =notice
+    -if alert
+      .alert-box.alert
+        =alert
