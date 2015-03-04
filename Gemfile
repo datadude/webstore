@@ -37,6 +37,7 @@ gem 'better_errors'
 gem 'foundation-rails'
 
 group :development, :test do
+  gem 'html2haml'
   gem 'spring'
   gem'rspec-rails'
   gem 'capybara'
