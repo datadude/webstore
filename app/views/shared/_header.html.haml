@@ -57,10 +57,15 @@
                     %li
                       %a{:href => "#"} See all &rarr;
               %li.divider
-              %li
-                %a{:href => "#"} Sign on
-
-
+              -if user_signed_in?
+                %li
+                  = link_to('Sign Out', destroy_user_session_path, :method => 'delete')
+              -else
+                %li.has-dropdown
+                  = link_to('Sign up', new_user_registration_path)
+                  %ul.dropdown
+                    %li
+                      = link_to('Sign in', new_user_session_path)
               -# commented out example of dropdown navigation
                 %li.divider
                 %li.has-dropdown
