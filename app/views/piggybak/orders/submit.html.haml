@@ -21,9 +21,17 @@
 :javascript
   var shipping_lookup = "#{piggybak.orders_shipping_url}"; 
   var tax_lookup = "#{piggybak.orders_tax_url}"; 
-  var geodata_lookup = "#{piggybak.orders_geodata_url}"; 
-  <haml_silent> if params.has_key?(:piggybak_order) &amp;&amp;  params[:piggybak_order].has_key?(:shipments_attributes) 
-  </haml_silent><haml_block>var previous_shipping = #{params[:piggybak_order][:shipments_attributes]["0"][:shipping_method_id]};
-  </haml_block><haml_silent> else 
-  </haml_silent><haml_block>var previous_shipping = "";
-  </haml_block>
+  var geodata_lookup = "#{piggybak.orders_geodata_url}";
+  #{
+    if (params.has_key?(:piggybak_order) && params[:piggybak_order].has_key?(:shipments_attributes))
+      "var previous_shipping = \"#{params[:piggybak_order][:shipments_attributes]["0"][:shipping_method_id]}\";"
+    else
+      "var previous_shipping = \"\";"
+    end
+    }
+
+-#
+  <haml_silent> if params.has_key?(:piggybak_order) &amp;&amp;  params[:piggybak_order].has_key?(:shipments_attributes)</haml_silent>
+  <haml_block>var previous_shipping = #{params[:piggybak_order][:shipments_attributes]["0"][:shipping_method_id]};</haml_block>
+  <haml_silent> else </haml_silent>
+  <haml_block>var previous_shipping = "";</haml_block>
