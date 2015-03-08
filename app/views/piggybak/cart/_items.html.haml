@@ -47,9 +47,14 @@
           %td Total
           %td#order_total
     - if page == "cart"
-      %div{"data-no-turbolink" => ""}
-        = link_to "Proceed to Checkout", piggybak.orders_url, :id => "checkout"
-      = submit_tag "Update", :id => "update"
+      .row
+        .small-12.columns
+          =button_tag("Update Cart",{id:"update", class: 'expand radius'})
+          %ul.button-group.radius
+            %li
+              = link_to "Proceed to Checkout", piggybak.orders_url, id: "checkout", class: 'button secondary'
+            %li
+              = link_to "Continue Shopping", cookies['back_to'], class: 'button secondary'
 - else
   %p#emtpy
     Your cart is empty.
