@@ -1,12 +1,10 @@
-.row
-  .small-12.large-6.columns
-    %h2 Resend confirmation instructions
-    = form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
-      = devise_error_messages!
-      .field
-        = f.label :email
-        %br/
-        = f.email_field :email, autofocus: true
-      .actions
-        = f.button "Resend confirmation instructions", class: 'expand radius'
-    = render "devise/shared/links"
+%h2 Resend confirmation instructions
+= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+  = devise_error_messages!
+  .field
+    = f.label :email
+    %br/
+    = f.email_field :email, autofocus: true
+  .actions
+    = f.button "Resend confirmation instructions", class: 'expand radius'
+= render "devise/shared/links"

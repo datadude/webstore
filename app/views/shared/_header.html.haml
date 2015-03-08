@@ -21,12 +21,12 @@
               %li.divider
               -if user_signed_in?
                 %li
-                  = link_to('Sign Out', destroy_user_session_path, :method => 'delete')
+                  = link_to('Sign Out', main_app.destroy_user_session_path, :method => 'delete')
               -else
                 %li
-                  = link_to('Sign in', new_user_session_path)
+                  = link_to('Sign in', main_app.new_user_session_path)
                 %li
-                  = link_to('Sign up', new_user_registration_path)
+                  = link_to('Sign up', main_app.new_user_registration_path)
         / End Top Bar
       / End Navigation
     -if notice
@@ -35,3 +35,5 @@
     -if alert
       .alert-box.alert
         =alert
+.row
+  .small-12.columns
