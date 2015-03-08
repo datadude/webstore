@@ -1,5 +1,4 @@
 .large-4.small-6.columns
   = image_tag("products/main/#{item.graphic_path}")
   .panel
-    %h5 #{item.display_name}
-    %h6.subheader #{number_to_currency(item.price)}
+    =cart_form(item)

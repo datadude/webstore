@@ -1,0 +1,55 @@
+- if @cart.sellables.any?
+  = form_tag piggybak.cart_update_url do
+    %table{:cellpadding => "5", :cellspacing => "0", :width => "100%"}
+      %tr
+        %th#item_col Item
+        %th#price_col Price
+        %th#quantity_col Quantity
+        %th#subtotal_col Subtotal
+        - if page == "cart"
+          %th
+      - @cart.sellables.each do |item|
+        %tr
+          %td= item[:sellable].description
+          %td= number_to_currency item[:sellable].price
+          %td
+            - if page == "cart"
+              = number_field_tag "quantity[#{item[:sellable].id}]", item[:quantity]
+            - else
+              = item[:quantity]
+          %td= number_to_currency item[:quantity]*item[:sellable].price
+          - if page == "cart"
+            %td
+              = link_to "Remove", piggybak.remove_item_url(item[:sellable].id), :method => :delete
+      %tr
+        %td{:colspan => "#{page == "cart" ? "5" : "4"}"}
+      %tr
+        %td{:colspan => "#{page == "cart" ? "3" : "2"}"}
+        %td Subtotal
+        %td#subtotal_total{"data-total" => "#{@cart.total}"}= number_to_currency @cart.total
+      - if page != "cart"
+        %tr
+          %td{:colspan => "#{page == "cart" ? "3" : "2"}"}
+          %td Estimated Tax
+          %td#tax_total
+        %tr
+          %td{:colspan => "#{page == "cart" ? "3" : "2"}"}
+          %td Shipping
+          %td#shipping_total
+        - Piggybak.config.line_item_types.each do |k, v|
+          - if v.has_key?(:display_in_cart)
+            %tr{:id => "#{k}_row", :style => "display:none;"}
+              %td{:colspan => "#{page == "cart" ? "3" : "2"}"}
+              %td= v[:display_in_cart]
+              %td{:class => "extra_totals #{'reduce_tax_subtotal' if v.has_key?(:reduce_tax_subtotal)  v[:reduce_tax_subtotal]}", :id => "#{k}_total"} $0.00
+        %tr
+          %td{:colspan => "#{page == "cart" ? "3" : "2"}"}
+          %td Total
+          %td#order_total
+    - if page == "cart"
+      %div{"data-no-turbolink" => ""}
+        = link_to "Proceed to Checkout", piggybak.orders_url, :id => "checkout"
+      = submit_tag "Update", :id => "update"
+- else
+  %p#emtpy
+    Your cart is empty.

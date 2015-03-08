@@ -5,12 +5,12 @@
       =image_tag('banner.jpg')
     .row
       .large-12.columns
-        %nav.top-bar
+        %nav.top-bar{role: 'navigation', 'data-topbar'=>'', 'data-options'=>"is_hover: false"}
           %ul.title-area
             / Title Area
             %li.name
               %h1
-                %a{:href => "#"}
+                %a{:href => "/"}
                   #{APP_CONFIG[:store_name]}
             %li.toggle-topbar.menu-icon
               %a{:href => "#"}
@@ -18,68 +18,15 @@
           %section.top-bar-section
             / Right Nav Section
             %ul.right
-              -# commented out example of dropdown navigation
-                %li.divider
-                %li.has-dropdown
-                  %a{:href => "#"} Main Item 1
-                  %ul.dropdown
-                    %li
-                      %label Section Name
-                    %li.has-dropdown
-                      %a{:href => "#"} Has Dropdown, Level 1
-                      %ul.dropdown
-                        %li
-                          %a{:href => "#"} Dropdown Options
-                        %li
-                          %a{:href => "#"} Dropdown Options
-                        %li
-                          %a{:href => "#"} Level 2
-                        %li
-                          %a{:href => "#"} Subdropdown Option
-                        %li
-                          %a{:href => "#"} Subdropdown Option
-                        %li
-                          %a{:href => "#"} Subdropdown Option
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li.divider
-                    %li
-                      %label Section Name
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li.divider
-                    %li
-                      %a{:href => "#"} See all &rarr;
               %li.divider
               -if user_signed_in?
                 %li
                   = link_to('Sign Out', destroy_user_session_path, :method => 'delete')
               -else
-                %li.has-dropdown
+                %li
+                  = link_to('Sign in', new_user_session_path)#
+                %li
                   = link_to('Sign up', new_user_registration_path)
-                  %ul.dropdown
-                    %li
-                      = link_to('Sign in', new_user_session_path)
-              -# commented out example of dropdown navigation
-                %li.divider
-                %li.has-dropdown
-                  %a{:href => "#"} Main Item 3
-                  %ul.dropdown
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li
-                      %a{:href => "#"} Dropdown Option
-                    %li.divider
-                    %li
-                      %a{:href => "#"} See all &rarr;
         / End Top Bar
       / End Navigation
     -if notice

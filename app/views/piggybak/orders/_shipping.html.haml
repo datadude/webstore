@@ -1,0 +1,14 @@
+#shipping{"data-no-turbolink" => ""}
+  %h3 Shipping Option
+  = f.fields_for :line_items, @order.line_items.detect { |li| li.line_item_type == "shipment" } do |line_item_f|
+    = line_item_f.hidden_field :line_item_type, { :value => "shipment" }
+    = line_item_f.fields_for :shipment do |shipment|
+      .item
+        = shipment.label :shipping_method_id
+        = shipment.select :shipping_method_id, []
+        #shipping_spinner{:style => "display:none;"}
+          = image_tag "ajax-loader.gif"
+        #shipping_default{:style => "display:none;"}
+          Please enter a shipping address.
+        #shipping_empty{:style => "display:none;"}
+          No shipping methods found.

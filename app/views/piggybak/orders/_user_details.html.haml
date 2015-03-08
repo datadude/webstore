@@ -1,0 +1,17 @@
+#user_details
+  %h3 User Details
+  .item
+    - if current_user
+      = f.label :email
+      = f.text_field :email, { :readonly => true, :class => "readonly required" }
+      %span
+        or #{link_to 'LOGOUT', main_app.destroy_user_session_path, :method => :delete, :class => "last"}
+    - else
+      = f.label :email
+      = f.text_field :email, :class => "required"
+      %br/
+      %span
+        or #{link_to 'LOG IN', main_app.new_user_session_path}
+  .item
+    = f.label :phone
+    = f.text_field :phone, :class => "required"

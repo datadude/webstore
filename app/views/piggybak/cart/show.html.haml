@@ -1,0 +1,6 @@
+#cart
+  %h1 Shopping Cart
+  - if @cart.errors.any?
+    #cart_error
+      = raw @cart.errors.join('<br />')
+  = render "items", :page => "cart"

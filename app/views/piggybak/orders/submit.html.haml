@@ -1,0 +1,29 @@
+#checkout
+  %h1 Checkout
+  = form_for @order, :url => piggybak.orders_url, :method => "POST" do |f|
+    - if @order.errors.any?
+      #checkout_error
+        %b You have errors with your submission:
+        %br/
+        = raw @order.errors.full_messages.collect { |b| b.gsub(/^Line items payment/, 'Payment').gsub(/^Line items shipment shipping/, 'Shipping') }.join("<br />")
+    .clear
+    = render "user_details", :f => f
+    = render "billing_address", :f => f
+    = render "shipping_address", :f => f
+    #add_details
+      = render "shipping", :f => f
+      = render "payment", :f => f
+      #submit
+        = f.submit
+  #totals_section
+    %h3 Totals
+    = render "piggybak/cart/items", :page => "checkout"
+:javascript
+  var shipping_lookup = "#{piggybak.orders_shipping_url}"; 
+  var tax_lookup = "#{piggybak.orders_tax_url}"; 
+  var geodata_lookup = "#{piggybak.orders_geodata_url}"; 
+  <haml_silent> if params.has_key?(:piggybak_order) &amp;&amp;  params[:piggybak_order].has_key?(:shipments_attributes) 
+  </haml_silent><haml_block>var previous_shipping = #{params[:piggybak_order][:shipments_attributes]["0"][:shipping_method_id]};
+  </haml_block><haml_silent> else 
+  </haml_silent><haml_block>var previous_shipping = "";
+  </haml_block>

@@ -1,0 +1,43 @@
+%table#items{:cellpadding => "5", :cellspacing => "0"}
+  %tr
+    %th Item
+    %th Price
+    %th Quantity
+    %th Subtotal
+  - order.line_items.sellables.each do |line_item|
+    %tr
+      %td= line_item.description
+      %td= number_to_currency line_item.unit_price
+      %td= line_item.quantity
+      %td= number_to_currency line_item.price
+  %tr
+    %td{:colspan => "4"}
+  %tr
+    %td{:colspan => "2"}
+    %td Subtotal
+    %td= number_to_currency order.line_items.sellables.inject(0) { |subtotal, li| subtotal + li.price }
+  %tr
+    %td{:colspan => "2"}
+    %td Tax
+    %td= number_to_currency order.tax_charge
+  %tr
+    %td{:colspan => "2"}
+    %td Shipping
+    %td= number_to_currency order.shipment_charge
+  - Piggybak.config.line_item_types.each do |k, v|
+    - if v.has_key?(:display_in_cart) && order.line_items.detect { |li| li.line_item_type == k.to_s }
+      %tr
+        %td{:colspan => "2"}
+        %td= v[:display_in_cart]
+        %td.extra_totals{:id => "#{k}_total"}= number_to_currency order.line_items.detect { |li| li.line_item_type == k.to_s }.price
+  %tr
+    %td{:colspan => "2"}
+    %td Total
+    %td= number_to_currency order.total
+Email: #{order.email}
+%br/
+Phone: #{order.phone}
+%h3 Billing Information
+= raw order.billing_address.display
+%h3 Shipping Information
+= raw order.shipping_address.display

@@ -1,0 +1,10 @@
+#list_orders
+  %h1 Your Orders
+  - current_user.piggybak_orders.each do |order|
+    %h2
+      Order ##{order.id}
+    Status: #{order.status}
+    %br/
+    Created at: #{order.created_at.strftime("%m-%d-%Y")}
+    %br/
+    = render "details", :order => order

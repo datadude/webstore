@@ -1,0 +1,6 @@
+#shipping_address{"data-no-turbolink" => ""}
+  %h3
+    Shipping Address
+    %a#copy{:href => "#"} copy from billing
+  = f.fields_for :shipping_address do |shipping_address|
+    = render "address_form", :address => shipping_address, :type => "shipping"

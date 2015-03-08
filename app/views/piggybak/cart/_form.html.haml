@@ -1,0 +1,16 @@
+- if object.respond_to?(:piggybak_sellable)
+  - if object.piggybak_sellable && object.piggybak_sellable.active
+    - if object.piggybak_sellable.quantity > 0 || object.piggybak_sellable.unlimited_inventory
+      = form_tag piggybak.cart_add_url, locals[:options] do
+        .row
+          .small-11.columns
+            .item-title
+              = object.piggybak_sellable.description
+            .item-price
+              Price: #{number_to_currency object.piggybak_sellable.price}
+            %label Quantity:
+            = text_field_tag :quantity, "1", size: 2
+            = hidden_field_tag :sellable_id, object.piggybak_sellable.id
+            = button_tag "Add to Cart", id: "submit", class: "expand radius"
+    - else
+      Sorry, out of stock.
