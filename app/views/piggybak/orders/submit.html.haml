@@ -1,5 +1,8 @@
 #checkout
   %h1 Checkout
+  #totals_section
+    %h3 Totals
+    = render "piggybak/cart/items", :page => "checkout"
   = form_for @order, :url => piggybak.orders_url, :method => "POST" do |f|
     - if @order.errors.any?
       #checkout_error
@@ -7,17 +10,29 @@
         %br/
         = raw @order.errors.full_messages.collect { |b| b.gsub(/^Line items payment/, 'Payment').gsub(/^Line items shipment shipping/, 'Shipping') }.join("<br />")
     .clear
-    = render "user_details", :f => f
-    = render "billing_address", :f => f
-    = render "shipping_address", :f => f
-    #add_details
-      = render "shipping", :f => f
-      = render "payment", :f => f
-      #submit
-        = f.submit
-  #totals_section
-    %h3 Totals
-    = render "piggybak/cart/items", :page => "checkout"
+    .row
+      .medium-6.columns
+        .row
+          .small-11.columns
+            = render "user_details", :f => f
+      .medium-6.columns
+        .row
+          .small-11.columns
+            = render "payment", :f => f
+            = render "shipping", :f => f
+    .row
+      .medium-6.columns
+        .row
+          .small-11.columns
+            = render "billing_address", :f => f
+      .medium-6.columns
+        .row
+          .small-11.columns
+            = render "shipping_address", :f => f
+    .row
+      .small-6.small-centered.columns
+        = f.button("Checkout", class: 'expand radius')
+
 :javascript
   var shipping_lookup = "#{piggybak.orders_shipping_url}"; 
   var tax_lookup = "#{piggybak.orders_tax_url}"; 

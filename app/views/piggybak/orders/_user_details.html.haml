@@ -1,17 +1,16 @@
 #user_details
   %h3 User Details
   .item
-    - if current_user
-      = f.label :email
+    = f.label :email
+    -if current_user
       = f.text_field :email, { :readonly => true, :class => "readonly required" }
-      %span
-        or #{link_to 'LOGOUT', main_app.destroy_user_session_path, :method => :delete, :class => "last"}
-    - else
-      = f.label :email
-      = f.text_field :email, :class => "required"
-      %br/
-      %span
-        or #{link_to 'LOG IN', main_app.new_user_session_path}
+    -else
+      = f.text_field :email, {:class => "required" }
   .item
     = f.label :phone
     = f.text_field :phone, :class => "required"
+  .button.expand.radius
+    -if current_user
+      #{link_to 'or Sign Out', main_app.destroy_user_session_path, :method => :delete, :class => "last"}
+    - else
+      #{link_to 'or Sign In', main_app.new_user_session_path}

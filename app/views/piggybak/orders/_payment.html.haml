@@ -3,28 +3,22 @@
   = f.fields_for :line_items, @order.line_items.detect { |li| li.line_item_type == "payment" } do |line_item_f|
     = line_item_f.hidden_field :line_item_type, { :value => "payment" }
     = line_item_f.fields_for :payment do |payment|
-      .item
-        = payment.label :number
-        - if @order.errors.keys.include?("payments.number".to_sym)
-          %span.field_with_errors
+      .row
+        .small-12.columns
+          = payment.label :number, 'Account Number:'
+          - if @order.errors.keys.include?("payments.number".to_sym)
+            %span.field_with_errors
+              = payment.text_field :number, :class => "required"
+          - else
             = payment.text_field :number, :class => "required"
-        - else
-          = payment.text_field :number, :class => "required"
-      .item
-        = payment.label :verification_value
-        - if @order.errors.keys.include?("payments.verification_value".to_sym)
-          %span.field_with_errors
-            = payment.text_field :verification_value, :class => "required"
-        - else
+      .row
+        .small-3.columns.left
+          = payment.label :verification_value, 'CVV:'
           = payment.text_field :verification_value, :class => "required"
-      .item
-        = payment.label :month
-        - if @order.errors.keys.include?("payments.verification_value".to_sym)
-          %span.field_with_errors
-            = payment.select :month, 1.upto(12).to_a
-            \/
-            \#{payment.select :year, Time.now.year.upto(Time.now.year + 10).to_a}
-        - else
+        .small-4.columns.left
+          = payment.label :month, 'Exp. Mon:'
           = payment.select :month, 1.upto(12).to_a
-          \/
+        .small-3.columns.left
+          =payment.label :year, 'Exp Year:'
           \#{payment.select :year, Time.now.year.upto(Time.now.year + 10).to_a}
+          =# payment.label :verification_value
