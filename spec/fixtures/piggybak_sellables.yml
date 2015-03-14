@@ -1,0 +1,101 @@
+---
+piggybak_sellables_001:
+  id: '1'
+  sku: '1234567890'
+  description: Chair number one.
+  price: '1.00'
+  quantity: '10'
+  item_id: '1'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_002:
+  id: '2'
+  sku: '1234567891'
+  description: Chair Number 2
+  price: '2.00'
+  quantity: '10'
+  item_id: '2'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_003:
+  id: '3'
+  sku: '1234567892'
+  description: Table A
+  price: '1.00'
+  quantity: '0'
+  item_id: '3'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_004:
+  id: '4'
+  sku: '1234567893'
+  description: Table B
+  price: '1.00'
+  quantity: '10'
+  item_id: '4'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_005:
+  id: '5'
+  sku: '1234567894'
+  description: Plate number one
+  price: '1.00'
+  quantity: '10'
+  item_id: '5'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_006:
+  id: '6'
+  sku: '1234567895'
+  description: Plate number two
+  price: '1.00'
+  quantity: '10'
+  item_id: '6'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_007:
+  id: '7'
+  sku: '1234567896'
+  description: Fork
+  price: '1.00'
+  quantity: '10'
+  item_id: '7'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_008:
+  id: '8'
+  sku: '1234567897'
+  description: Butter knife
+  price: '2.00'
+  quantity: '10'
+  item_id: '8'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_009:
+  id: '9'
+  sku: '1234567898'
+  description: Steak knife
+  price: '3.00'
+  quantity: '10'
+  item_id: '9'
+  item_type: Item
+  active: t
+  unlimited_inventory: t
+piggybak_sellables_010:
+  id: '10'
+  sku: '1234567899'
+  description: Spoon
+  price: '10.00'
+  quantity: '10'
+  item_id: '10'
+  item_type: Item
+  active: t
+  unlimited_inventory: t

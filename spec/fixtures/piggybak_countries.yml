@@ -1,0 +1,1501 @@
+---
+piggybak_countries_001:
+  id: '1'
+  name: Andorra
+  abbr: AD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_002:
+  id: '2'
+  name: United Arab Emirates
+  abbr: AE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_003:
+  id: '3'
+  name: Afghanistan
+  abbr: AF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_004:
+  id: '4'
+  name: Antigua and Barbuda
+  abbr: AG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_005:
+  id: '5'
+  name: Anguilla
+  abbr: AI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_006:
+  id: '6'
+  name: Albania
+  abbr: AL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_007:
+  id: '7'
+  name: Armenia
+  abbr: AM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_008:
+  id: '8'
+  name: Netherlands Antilles
+  abbr: AN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_009:
+  id: '9'
+  name: Angola
+  abbr: AO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_010:
+  id: '10'
+  name: Antarctica
+  abbr: AQ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_011:
+  id: '11'
+  name: Argentina
+  abbr: AR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_012:
+  id: '12'
+  name: American Samoa
+  abbr: AS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_013:
+  id: '13'
+  name: Austria
+  abbr: AT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_014:
+  id: '14'
+  name: Australia
+  abbr: AU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_015:
+  id: '15'
+  name: Aruba
+  abbr: AW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_016:
+  id: '16'
+  name: "Åland Islands"
+  abbr: AX
+  active_shipping: f
+  active_billing: f
+piggybak_countries_017:
+  id: '17'
+  name: Azerbaijan
+  abbr: AZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_018:
+  id: '18'
+  name: Bosnia and Herzegovina
+  abbr: BA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_019:
+  id: '19'
+  name: Barbados
+  abbr: BB
+  active_shipping: f
+  active_billing: f
+piggybak_countries_020:
+  id: '20'
+  name: Bangladesh
+  abbr: BD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_021:
+  id: '21'
+  name: Belgium
+  abbr: BE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_022:
+  id: '22'
+  name: Burkina Faso
+  abbr: BF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_023:
+  id: '23'
+  name: Bulgaria
+  abbr: BG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_024:
+  id: '24'
+  name: Bahrain
+  abbr: BH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_025:
+  id: '25'
+  name: Burundi
+  abbr: BI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_026:
+  id: '26'
+  name: Benin
+  abbr: BJ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_027:
+  id: '27'
+  name: Saint Barthélemy
+  abbr: BL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_028:
+  id: '28'
+  name: Bermuda
+  abbr: BM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_029:
+  id: '29'
+  name: Brunei Darussalam
+  abbr: BN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_030:
+  id: '30'
+  name: Bolivia
+  abbr: BO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_031:
+  id: '31'
+  name: Bonaire, Sint Eustatius and Saba
+  abbr: BQ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_032:
+  id: '32'
+  name: Brazil
+  abbr: BR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_033:
+  id: '33'
+  name: Bahamas
+  abbr: BS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_034:
+  id: '34'
+  name: Bhutan
+  abbr: BT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_035:
+  id: '35'
+  name: Bouvet Island
+  abbr: BV
+  active_shipping: f
+  active_billing: f
+piggybak_countries_036:
+  id: '36'
+  name: Botswana
+  abbr: BW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_037:
+  id: '37'
+  name: Belarus
+  abbr: BY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_038:
+  id: '38'
+  name: Belize
+  abbr: BZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_039:
+  id: '39'
+  name: Canada
+  abbr: CA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_040:
+  id: '40'
+  name: Cocos (Keeling) Islands
+  abbr: CC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_041:
+  id: '41'
+  name: Congo, The Democratic Republic Of The
+  abbr: CD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_042:
+  id: '42'
+  name: Central African Republic
+  abbr: CF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_043:
+  id: '43'
+  name: Congo
+  abbr: CG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_044:
+  id: '44'
+  name: Switzerland
+  abbr: CH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_045:
+  id: '45'
+  name: Côte D'Ivoire
+  abbr: CI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_046:
+  id: '46'
+  name: Cook Islands
+  abbr: CK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_047:
+  id: '47'
+  name: Chile
+  abbr: CL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_048:
+  id: '48'
+  name: Cameroon
+  abbr: CM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_049:
+  id: '49'
+  name: China
+  abbr: CN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_050:
+  id: '50'
+  name: Colombia
+  abbr: CO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_051:
+  id: '51'
+  name: Costa Rica
+  abbr: CR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_052:
+  id: '52'
+  name: Cuba
+  abbr: CU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_053:
+  id: '53'
+  name: Cape Verde
+  abbr: CV
+  active_shipping: f
+  active_billing: f
+piggybak_countries_054:
+  id: '54'
+  name: Curaçao
+  abbr: CW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_055:
+  id: '55'
+  name: Christmas Island
+  abbr: CX
+  active_shipping: f
+  active_billing: f
+piggybak_countries_056:
+  id: '56'
+  name: Cyprus
+  abbr: CY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_057:
+  id: '57'
+  name: Czech Republic
+  abbr: CZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_058:
+  id: '58'
+  name: Germany
+  abbr: DE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_059:
+  id: '59'
+  name: Djibouti
+  abbr: DJ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_060:
+  id: '60'
+  name: Denmark
+  abbr: DK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_061:
+  id: '61'
+  name: Dominica
+  abbr: DM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_062:
+  id: '62'
+  name: Dominican Republic
+  abbr: DO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_063:
+  id: '63'
+  name: Algeria
+  abbr: DZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_064:
+  id: '64'
+  name: Ecuador
+  abbr: EC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_065:
+  id: '65'
+  name: Estonia
+  abbr: EE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_066:
+  id: '66'
+  name: Egypt
+  abbr: EG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_067:
+  id: '67'
+  name: Western Sahara
+  abbr: EH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_068:
+  id: '68'
+  name: Eritrea
+  abbr: ER
+  active_shipping: f
+  active_billing: f
+piggybak_countries_069:
+  id: '69'
+  name: Spain
+  abbr: ES
+  active_shipping: f
+  active_billing: f
+piggybak_countries_070:
+  id: '70'
+  name: Ethiopia
+  abbr: ET
+  active_shipping: f
+  active_billing: f
+piggybak_countries_071:
+  id: '71'
+  name: Finland
+  abbr: FI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_072:
+  id: '72'
+  name: Fiji
+  abbr: FJ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_073:
+  id: '73'
+  name: Falkland Islands (Malvinas)
+  abbr: FK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_074:
+  id: '74'
+  name: Micronesia, Federated States Of
+  abbr: FM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_075:
+  id: '75'
+  name: Faroe Islands
+  abbr: FO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_076:
+  id: '76'
+  name: France
+  abbr: FR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_077:
+  id: '77'
+  name: Gabon
+  abbr: GA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_078:
+  id: '78'
+  name: United Kingdom
+  abbr: GB
+  active_shipping: f
+  active_billing: f
+piggybak_countries_079:
+  id: '79'
+  name: Grenada
+  abbr: GD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_080:
+  id: '80'
+  name: Georgia
+  abbr: GE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_081:
+  id: '81'
+  name: French Guiana
+  abbr: GF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_082:
+  id: '82'
+  name: Guernsey
+  abbr: GG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_083:
+  id: '83'
+  name: Ghana
+  abbr: GH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_084:
+  id: '84'
+  name: Gibraltar
+  abbr: GI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_085:
+  id: '85'
+  name: Greenland
+  abbr: GL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_086:
+  id: '86'
+  name: Gambia
+  abbr: GM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_087:
+  id: '87'
+  name: Guinea
+  abbr: GN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_088:
+  id: '88'
+  name: Guadeloupe
+  abbr: GP
+  active_shipping: f
+  active_billing: f
+piggybak_countries_089:
+  id: '89'
+  name: Equatorial Guinea
+  abbr: GQ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_090:
+  id: '90'
+  name: Greece
+  abbr: GR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_091:
+  id: '91'
+  name: South Georgia and the South Sandwich Islands
+  abbr: GS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_092:
+  id: '92'
+  name: Guatemala
+  abbr: GT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_093:
+  id: '93'
+  name: Guam
+  abbr: GU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_094:
+  id: '94'
+  name: Guinea-Bissau
+  abbr: GW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_095:
+  id: '95'
+  name: Guyana
+  abbr: GY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_096:
+  id: '96'
+  name: Hong Kong
+  abbr: HK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_097:
+  id: '97'
+  name: Heard and McDonald Islands
+  abbr: HM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_098:
+  id: '98'
+  name: Honduras
+  abbr: HN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_099:
+  id: '99'
+  name: Croatia
+  abbr: HR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_100:
+  id: '100'
+  name: Haiti
+  abbr: HT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_101:
+  id: '101'
+  name: Hungary
+  abbr: HU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_102:
+  id: '102'
+  name: Indonesia
+  abbr: ID
+  active_shipping: f
+  active_billing: f
+piggybak_countries_103:
+  id: '103'
+  name: Ireland
+  abbr: IE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_104:
+  id: '104'
+  name: Israel
+  abbr: IL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_105:
+  id: '105'
+  name: Isle of Man
+  abbr: IM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_106:
+  id: '106'
+  name: India
+  abbr: IN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_107:
+  id: '107'
+  name: British Indian Ocean Territory
+  abbr: IO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_108:
+  id: '108'
+  name: Iraq
+  abbr: IQ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_109:
+  id: '109'
+  name: Iran, Islamic Republic Of
+  abbr: IR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_110:
+  id: '110'
+  name: Iceland
+  abbr: IS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_111:
+  id: '111'
+  name: Italy
+  abbr: IT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_112:
+  id: '112'
+  name: Jersey
+  abbr: JE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_113:
+  id: '113'
+  name: Jamaica
+  abbr: JM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_114:
+  id: '114'
+  name: Jordan
+  abbr: JO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_115:
+  id: '115'
+  name: Japan
+  abbr: JP
+  active_shipping: f
+  active_billing: f
+piggybak_countries_116:
+  id: '116'
+  name: Kenya
+  abbr: KE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_117:
+  id: '117'
+  name: Kyrgyzstan
+  abbr: KG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_118:
+  id: '118'
+  name: Cambodia
+  abbr: KH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_119:
+  id: '119'
+  name: Kiribati
+  abbr: KI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_120:
+  id: '120'
+  name: Comoros
+  abbr: KM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_121:
+  id: '121'
+  name: Saint Kitts And Nevis
+  abbr: KN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_122:
+  id: '122'
+  name: Korea, Democratic People's Republic Of
+  abbr: KP
+  active_shipping: f
+  active_billing: f
+piggybak_countries_123:
+  id: '123'
+  name: Korea, Republic of
+  abbr: KR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_124:
+  id: '124'
+  name: Kuwait
+  abbr: KW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_125:
+  id: '125'
+  name: Cayman Islands
+  abbr: KY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_126:
+  id: '126'
+  name: Kazakhstan
+  abbr: KZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_127:
+  id: '127'
+  name: Lao People's Democratic Republic
+  abbr: LA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_128:
+  id: '128'
+  name: Lebanon
+  abbr: LB
+  active_shipping: f
+  active_billing: f
+piggybak_countries_129:
+  id: '129'
+  name: Saint Lucia
+  abbr: LC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_130:
+  id: '130'
+  name: Liechtenstein
+  abbr: LI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_131:
+  id: '131'
+  name: Sri Lanka
+  abbr: LK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_132:
+  id: '132'
+  name: Liberia
+  abbr: LR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_133:
+  id: '133'
+  name: Lesotho
+  abbr: LS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_134:
+  id: '134'
+  name: Lithuania
+  abbr: LT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_135:
+  id: '135'
+  name: Luxembourg
+  abbr: LU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_136:
+  id: '136'
+  name: Latvia
+  abbr: LV
+  active_shipping: f
+  active_billing: f
+piggybak_countries_137:
+  id: '137'
+  name: Libya
+  abbr: LY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_138:
+  id: '138'
+  name: Morocco
+  abbr: MA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_139:
+  id: '139'
+  name: Monaco
+  abbr: MC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_140:
+  id: '140'
+  name: Moldova, Republic of
+  abbr: MD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_141:
+  id: '141'
+  name: Montenegro
+  abbr: ME
+  active_shipping: f
+  active_billing: f
+piggybak_countries_142:
+  id: '142'
+  name: Saint Martin
+  abbr: MF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_143:
+  id: '143'
+  name: Madagascar
+  abbr: MG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_144:
+  id: '144'
+  name: Marshall Islands
+  abbr: MH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_145:
+  id: '145'
+  name: Macedonia, the Former Yugoslav Republic Of
+  abbr: MK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_146:
+  id: '146'
+  name: Mali
+  abbr: ML
+  active_shipping: f
+  active_billing: f
+piggybak_countries_147:
+  id: '147'
+  name: Myanmar
+  abbr: MM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_148:
+  id: '148'
+  name: Mongolia
+  abbr: MN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_149:
+  id: '149'
+  name: Macao
+  abbr: MO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_150:
+  id: '150'
+  name: Northern Mariana Islands
+  abbr: MP
+  active_shipping: f
+  active_billing: f
+piggybak_countries_151:
+  id: '151'
+  name: Martinique
+  abbr: MQ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_152:
+  id: '152'
+  name: Mauritania
+  abbr: MR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_153:
+  id: '153'
+  name: Montserrat
+  abbr: MS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_154:
+  id: '154'
+  name: Malta
+  abbr: MT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_155:
+  id: '155'
+  name: Mauritius
+  abbr: MU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_156:
+  id: '156'
+  name: Maldives
+  abbr: MV
+  active_shipping: f
+  active_billing: f
+piggybak_countries_157:
+  id: '157'
+  name: Malawi
+  abbr: MW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_158:
+  id: '158'
+  name: Mexico
+  abbr: MX
+  active_shipping: f
+  active_billing: f
+piggybak_countries_159:
+  id: '159'
+  name: Malaysia
+  abbr: MY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_160:
+  id: '160'
+  name: Mozambique
+  abbr: MZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_161:
+  id: '161'
+  name: Namibia
+  abbr: NA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_162:
+  id: '162'
+  name: New Caledonia
+  abbr: NC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_163:
+  id: '163'
+  name: Niger
+  abbr: NE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_164:
+  id: '164'
+  name: Norfolk Island
+  abbr: NF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_165:
+  id: '165'
+  name: Nigeria
+  abbr: NG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_166:
+  id: '166'
+  name: Nicaragua
+  abbr: NI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_167:
+  id: '167'
+  name: Netherlands
+  abbr: NL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_168:
+  id: '168'
+  name: Norway
+  abbr: 'NO'
+  active_shipping: f
+  active_billing: f
+piggybak_countries_169:
+  id: '169'
+  name: Nepal
+  abbr: NP
+  active_shipping: f
+  active_billing: f
+piggybak_countries_170:
+  id: '170'
+  name: Nauru
+  abbr: NR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_171:
+  id: '171'
+  name: Niue
+  abbr: NU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_172:
+  id: '172'
+  name: New Zealand
+  abbr: NZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_173:
+  id: '173'
+  name: Oman
+  abbr: OM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_174:
+  id: '174'
+  name: Panama
+  abbr: PA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_175:
+  id: '175'
+  name: Peru
+  abbr: PE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_176:
+  id: '176'
+  name: French Polynesia
+  abbr: PF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_177:
+  id: '177'
+  name: Papua New Guinea
+  abbr: PG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_178:
+  id: '178'
+  name: Philippines
+  abbr: PH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_179:
+  id: '179'
+  name: Pakistan
+  abbr: PK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_180:
+  id: '180'
+  name: Poland
+  abbr: PL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_181:
+  id: '181'
+  name: Saint Pierre And Miquelon
+  abbr: PM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_182:
+  id: '182'
+  name: Pitcairn
+  abbr: PN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_183:
+  id: '183'
+  name: Puerto Rico
+  abbr: PR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_184:
+  id: '184'
+  name: Palestinian Territory, Occupied
+  abbr: PS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_185:
+  id: '185'
+  name: Portugal
+  abbr: PT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_186:
+  id: '186'
+  name: Palau
+  abbr: PW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_187:
+  id: '187'
+  name: Paraguay
+  abbr: PY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_188:
+  id: '188'
+  name: Qatar
+  abbr: QA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_189:
+  id: '189'
+  name: Réunion
+  abbr: RE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_190:
+  id: '190'
+  name: Romania
+  abbr: RO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_191:
+  id: '191'
+  name: Serbia
+  abbr: RS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_192:
+  id: '192'
+  name: Russian Federation
+  abbr: RU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_193:
+  id: '193'
+  name: Rwanda
+  abbr: RW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_194:
+  id: '194'
+  name: Saudi Arabia
+  abbr: SA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_195:
+  id: '195'
+  name: Solomon Islands
+  abbr: SB
+  active_shipping: f
+  active_billing: f
+piggybak_countries_196:
+  id: '196'
+  name: Seychelles
+  abbr: SC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_197:
+  id: '197'
+  name: Sudan
+  abbr: SD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_198:
+  id: '198'
+  name: Sweden
+  abbr: SE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_199:
+  id: '199'
+  name: Singapore
+  abbr: SG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_200:
+  id: '200'
+  name: Saint Helena
+  abbr: SH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_201:
+  id: '201'
+  name: Slovenia
+  abbr: SI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_202:
+  id: '202'
+  name: Svalbard And Jan Mayen
+  abbr: SJ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_203:
+  id: '203'
+  name: Slovakia
+  abbr: SK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_204:
+  id: '204'
+  name: Sierra Leone
+  abbr: SL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_205:
+  id: '205'
+  name: San Marino
+  abbr: SM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_206:
+  id: '206'
+  name: Senegal
+  abbr: SN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_207:
+  id: '207'
+  name: Somalia
+  abbr: SO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_208:
+  id: '208'
+  name: Suriname
+  abbr: SR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_209:
+  id: '209'
+  name: South Sudan
+  abbr: SS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_210:
+  id: '210'
+  name: Sao Tome and Principe
+  abbr: ST
+  active_shipping: f
+  active_billing: f
+piggybak_countries_211:
+  id: '211'
+  name: El Salvador
+  abbr: SV
+  active_shipping: f
+  active_billing: f
+piggybak_countries_212:
+  id: '212'
+  name: Sint Maarten
+  abbr: SX
+  active_shipping: f
+  active_billing: f
+piggybak_countries_213:
+  id: '213'
+  name: Syrian Arab Republic
+  abbr: SY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_214:
+  id: '214'
+  name: Swaziland
+  abbr: SZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_215:
+  id: '215'
+  name: Turks and Caicos Islands
+  abbr: TC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_216:
+  id: '216'
+  name: Chad
+  abbr: TD
+  active_shipping: f
+  active_billing: f
+piggybak_countries_217:
+  id: '217'
+  name: French Southern Territories
+  abbr: TF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_218:
+  id: '218'
+  name: Togo
+  abbr: TG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_219:
+  id: '219'
+  name: Thailand
+  abbr: TH
+  active_shipping: f
+  active_billing: f
+piggybak_countries_220:
+  id: '220'
+  name: Tajikistan
+  abbr: TJ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_221:
+  id: '221'
+  name: Tokelau
+  abbr: TK
+  active_shipping: f
+  active_billing: f
+piggybak_countries_222:
+  id: '222'
+  name: Timor-Leste
+  abbr: TL
+  active_shipping: f
+  active_billing: f
+piggybak_countries_223:
+  id: '223'
+  name: Turkmenistan
+  abbr: TM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_224:
+  id: '224'
+  name: Tunisia
+  abbr: TN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_225:
+  id: '225'
+  name: Tonga
+  abbr: TO
+  active_shipping: f
+  active_billing: f
+piggybak_countries_226:
+  id: '226'
+  name: Turkey
+  abbr: TR
+  active_shipping: f
+  active_billing: f
+piggybak_countries_227:
+  id: '227'
+  name: Trinidad and Tobago
+  abbr: TT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_228:
+  id: '228'
+  name: Tuvalu
+  abbr: TV
+  active_shipping: f
+  active_billing: f
+piggybak_countries_229:
+  id: '229'
+  name: Taiwan, Republic Of China
+  abbr: TW
+  active_shipping: f
+  active_billing: f
+piggybak_countries_230:
+  id: '230'
+  name: Tanzania, United Republic of
+  abbr: TZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_231:
+  id: '231'
+  name: Ukraine
+  abbr: UA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_232:
+  id: '232'
+  name: Uganda
+  abbr: UG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_233:
+  id: '233'
+  name: United States Minor Outlying Islands
+  abbr: UM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_234:
+  id: '234'
+  name: United States
+  abbr: US
+  active_shipping: f
+  active_billing: f
+piggybak_countries_235:
+  id: '235'
+  name: Uruguay
+  abbr: UY
+  active_shipping: f
+  active_billing: f
+piggybak_countries_236:
+  id: '236'
+  name: Uzbekistan
+  abbr: UZ
+  active_shipping: f
+  active_billing: f
+piggybak_countries_237:
+  id: '237'
+  name: Holy See (Vatican City State)
+  abbr: VA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_238:
+  id: '238'
+  name: Saint Vincent And The Grenedines
+  abbr: VC
+  active_shipping: f
+  active_billing: f
+piggybak_countries_239:
+  id: '239'
+  name: Venezuela, Bolivarian Republic of
+  abbr: VE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_240:
+  id: '240'
+  name: Virgin Islands, British
+  abbr: VG
+  active_shipping: f
+  active_billing: f
+piggybak_countries_241:
+  id: '241'
+  name: Virgin Islands, U.S.
+  abbr: VI
+  active_shipping: f
+  active_billing: f
+piggybak_countries_242:
+  id: '242'
+  name: Vietnam
+  abbr: VN
+  active_shipping: f
+  active_billing: f
+piggybak_countries_243:
+  id: '243'
+  name: Vanuatu
+  abbr: VU
+  active_shipping: f
+  active_billing: f
+piggybak_countries_244:
+  id: '244'
+  name: Wallis and Futuna
+  abbr: WF
+  active_shipping: f
+  active_billing: f
+piggybak_countries_245:
+  id: '245'
+  name: Samoa
+  abbr: WS
+  active_shipping: f
+  active_billing: f
+piggybak_countries_246:
+  id: '246'
+  name: Yemen
+  abbr: YE
+  active_shipping: f
+  active_billing: f
+piggybak_countries_247:
+  id: '247'
+  name: Mayotte
+  abbr: YT
+  active_shipping: f
+  active_billing: f
+piggybak_countries_248:
+  id: '248'
+  name: South Africa
+  abbr: ZA
+  active_shipping: f
+  active_billing: f
+piggybak_countries_249:
+  id: '249'
+  name: Zambia
+  abbr: ZM
+  active_shipping: f
+  active_billing: f
+piggybak_countries_250:
+  id: '250'
+  name: Zimbabwe
+  abbr: ZW
+  active_shipping: f
+  active_billing: f

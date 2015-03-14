@@ -1,0 +1,92 @@
+---
+items_001:
+  id: '1'
+  display_name: Chair
+  promo_text: Get our very best chair here!
+  promo_text_long: Thisis a very special chair for you today!
+  thumnail_path: tn_chair-1.jpg
+  graphic_path: mn_chair-1.jpg
+  created_at: '2015-03-01 18:52:11.154037'
+  updated_at: '2015-03-01 18:52:11.154037'
+items_002:
+  id: '2'
+  display_name: Chair Number 2
+  promo_text: Get Chair 2!
+  promo_text_long: This chair is even better than the last
+  thumnail_path: tn_chair-2.jpg
+  graphic_path: mn_chair-2.jpg
+  created_at: '2015-03-01 18:54:13.147165'
+  updated_at: '2015-03-01 18:54:13.147165'
+items_003:
+  id: '3'
+  display_name: Table A
+  promo_text: Promo text for really flat table!
+  promo_text_long: This table is really flat!
+  thumnail_path: tn_table-a.jpg
+  graphic_path: mn_table-a.jpg
+  created_at: '2015-03-01 18:58:15.871761'
+  updated_at: '2015-03-01 18:58:50.539901'
+items_004:
+  id: '4'
+  display_name: Table B
+  promo_text: Promo text for not so flat table
+  promo_text_long: So it is not so flat! This table is priced right!
+  thumnail_path: tn_table-b.jpg
+  graphic_path: mn_table-b.jpg
+  created_at: '2015-03-01 19:01:37.869529'
+  updated_at: '2015-03-01 19:01:37.869529'
+items_005:
+  id: '5'
+  display_name: Plate number one
+  promo_text: This plate is Great!
+  promo_text_long: This is the first plate in our list come and get it!
+  thumnail_path: tn_plate-1.jpg
+  graphic_path: mn_plate-1.jpg
+  created_at: '2015-03-01 19:06:25.429051'
+  updated_at: '2015-03-01 19:06:25.429051'
+items_006:
+  id: '6'
+  display_name: Plate number two
+  promo_text: Plate number two for you!
+  promo_text_long: This is the second plate in the list, better than the last!
+  thumnail_path: tn_plate-2.jpg
+  graphic_path: mn_plate-2.jpg
+  created_at: '2015-03-01 19:08:54.202272'
+  updated_at: '2015-03-01 19:08:54.202272'
+items_007:
+  id: '7'
+  display_name: Fork
+  promo_text: You really need this to eat!
+  promo_text_long: this fork has four tines and is a part of every good table setting.
+  thumnail_path: tn_fork-1.jpg
+  graphic_path: mn_fork-1.jpg
+  created_at: '2015-03-01 19:25:00.768635'
+  updated_at: '2015-03-01 19:26:34.083088'
+items_008:
+  id: '10'
+  display_name: spoon
+  promo_text: Get this round spoon!
+  promo_text_long: It is round and has a shallow depression so that your soup won't
+    escape.
+  thumnail_path: tn_spoon-1.jpg
+  graphic_path: mn_spoon-1.jpg
+  created_at: '2015-03-01 19:34:20.029244'
+  updated_at: '2015-03-01 19:34:20.029244'
+items_009:
+  id: '9'
+  display_name: Steak Knife
+  promo_text: This knife is sharp!
+  promo_text_long: Don't cut yourself!
+  thumnail_path: tn_steak-knife-1.jpg
+  graphic_path: mn_steak-knife-1.jpg
+  created_at: '2015-03-01 19:31:29.204601'
+  updated_at: '2015-03-01 21:18:16.277337'
+items_010:
+  id: '8'
+  display_name: Butter Knife
+  promo_text: This knife is dull!
+  promo_text_long: This knife is great for spreadoing butter and even peanutbutter.
+  thumnail_path: tn_butter-knife-1.jpg
+  graphic_path: mn_butter-knife-1.jpg
+  created_at: '2015-03-01 19:29:23.254241'
+  updated_at: '2015-03-01 21:18:47.505035'
