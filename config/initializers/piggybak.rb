@@ -28,4 +28,9 @@ Piggybak.config do |config|
   # extra_secure_paths
   # manage_classes
   # extra_abilities
+
+    Dir.glob(Rails.root + "app/decorators/piggybak/*_decorator*.rb").each do |c|
+      require_dependency(c)
+    end
+
 end

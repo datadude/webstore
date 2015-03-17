@@ -6,9 +6,17 @@
       %h3 #{APP_CONFIG[:tagline]}
       %h5.subheader
         #{APP_CONFIG[:promo_text]}
-    %a{:href => "#"}
-    .panel.callout.radius
-      %h6 99&nbsp; items in your cart
+    .panel.callout.radius#cart_window
+      .row
+        .small-12.columns
+          %h6 Your Cart:
+      .row
+        .small-4.large-12.columns
+          Items: #{@cart.count.to_s}
+        .small-4.large-12.columns
+          Amount: #{number_to_currency(@cart.total)}
+        .small-4.large-12.columns
+          =link_to 'Check Out',piggybak.orders_url,{class: 'button radius expand'}
   / End Side Bar
   / Thumbnails
   .large-8.columns

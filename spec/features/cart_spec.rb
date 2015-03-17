@@ -75,21 +75,23 @@ describe "Shopping Cart" do
   describe "Cart Window" do
     before :each do
       add_tables(2)
+      click_link 'Continue Shopping'
     end
-
+    it "should display div for cart window" do
+      page.assert_selector('div#cart_window')
+    end
     it "should display number of items" do
-      assert false
+        expect(find('div#cart_window')).to have_content 'Items: 2'
     end
 
     it "should display total amount" do
-      assert false
+      expect(find('div#cart_window')).to have_content 'Amount: $2.00'
     end
 
     it 'should display "checkout" button' do
-      assert false
+      expect(find('div#cart_window a.button').text).to eq 'Check Out'
+      expect(find('div#cart_window a.button')[:href]).to eq piggybak.orders_url
     end
-
-
 
   end
 end
