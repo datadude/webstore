@@ -87,6 +87,38 @@ feature "Signing up" do
     end
     click_button 'Sign up'
     expect(page).to have_content 'Password confirmation doesn\'t match Password Email Password'
+
   end
 
+end
+
+feature "Forgot password" do
+  scenario "with a valid email" do
+    visit "/users/password/new"
+    within("#new_user") do
+      fill_in "user_email", :with => 'admin@yoursite.net'
+      expect { click_button "Send me reset password instructions" }.to change { ActionMailer::Base.deliveries.count }.by(1)
+    end
+    expect(page).to have_content "You will receive an email with instructions on how to reset your password in a few minutes."
+  end
+
+  scenario "with an invalid email", :js => true do
+    pending "Need figure out how to test this javascript 'alert'"
+    visit "/users/password/new"
+    within("#new_user") do
+      fill_in "user_email", :with => 'invalidemail'
+     # expect { click_button "Send me reset password instructions" }.to change { ActionMailer::Base.deliveries.count }.by(0)
+      click_button "Send me reset password instructions"
+    end
+    expect(page).to have_content "Please enter and email address"
+  end
+
+  scenario "with a non existent email" do
+    visit "/users/password/new"
+    within("#new_user") do
+      fill_in "user_email", :with => 'bogus@bogus.com'
+      expect { click_button "Send me reset password instructions" }.to change { ActionMailer::Base.deliveries.count }.by(0)
+    end
+    expect(page).to have_content "Email not found"
+  end
 end
