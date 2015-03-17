@@ -1,5 +1,5 @@
 - if @cart.sellables.any?
-  = form_tag piggybak.cart_update_url do
+  = form_tag piggybak.cart_update_url, id: 'cart_form' do
     %table{:cellpadding => "5", :cellspacing => "0", :width => "100%"}
       %tr
         %th#item_col Item
@@ -20,7 +20,7 @@
           %td= number_to_currency item[:quantity]*item[:sellable].price
           - if page == "cart"
             %td
-              = link_to "Remove", piggybak.remove_item_url(item[:sellable].id), :method => :delete
+              = link_to "Remove", piggybak.remove_item_url(item[:sellable].id), :method => :delete, id: "remove-#{item[:sellable].sku}"
       %tr
         %td{:colspan => "#{page == "cart" ? "5" : "4"}"}
       %tr
@@ -58,3 +58,8 @@
 - else
   %p#emtpy
     Your cart is empty.
+  .row
+    .small-12.columns
+      %ul.button-group.radius
+        %li
+          = link_to "Continue Shopping", cookies['back_to'], class: 'button secondary'

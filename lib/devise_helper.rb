@@ -20,7 +20,6 @@ module DeviseHelper
       </div>
     </div>
     HTML
-
     html.html_safe
   end
 end
