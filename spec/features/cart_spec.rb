@@ -72,6 +72,25 @@ describe "Shopping Cart" do
     end
 
   end
-fgit
+  describe "Cart Window" do
+    before :each do
+      add_tables(2)
+    end
+
+    it "should display number of items" do
+      assert false
+    end
+
+    it "should display total amount" do
+      assert false
+    end
+
+    it 'should display "checkout" button' do
+      assert false
+    end
+
+
+
+  end
 end
 
