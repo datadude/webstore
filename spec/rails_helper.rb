@@ -4,6 +4,7 @@ require 'spec_helper'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'devise'
+require 'capybara/rails'
 require 'capybara/rspec'
 require 'rails_admin'
 # Add additional requires below this line. Rails is not loaded until this point!
@@ -26,7 +27,9 @@ require 'rails_admin'
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
-
+#Capybara.javascript_driver = :webkit
+#Capybara.server_port = 31337
+puts Capybara.server_port
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"

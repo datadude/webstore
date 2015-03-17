@@ -15,6 +15,9 @@ RSpec.describe HomeController, :type => :controller do
       items = Item.all
       expect(assigns(:items)).to eq(items)
     end
+    it "has 10 items" do
+      expect(items.length).to eq(10)
+    end
     it "renders the index template" do
       expect(response).to render_template("index")
     end
