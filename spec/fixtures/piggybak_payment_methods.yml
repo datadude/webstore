@@ -1,1 +1,8 @@
---- {}
+---
+piggybak_payment_methods_001:
+  id: '1'
+  description: Fake Credit Card
+  klass: "::Piggybak::PaymentCalculator::Fake"
+  active: t
+  created_at: '2015-03-19 00:13:33.473449'
+  updated_at: '2015-03-19 00:13:33.473449'

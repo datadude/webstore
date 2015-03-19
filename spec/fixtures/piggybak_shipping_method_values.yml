@@ -1,1 +1,21 @@
---- {}
+---
+piggybak_shipping_method_values_001:
+  id: '4'
+  shipping_method_id: '4'
+  key: rate
+  value: '10.0'
+piggybak_shipping_method_values_002:
+  id: '5'
+  shipping_method_id: '5'
+  key: rate
+  value: '20.0'
+piggybak_shipping_method_values_003:
+  id: '7'
+  shipping_method_id: '6'
+  key: rate
+  value: '0.0'
+piggybak_shipping_method_values_004:
+  id: '6'
+  shipping_method_id: '6'
+  key: state_id
+  value: '6907'

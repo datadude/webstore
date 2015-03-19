@@ -5,7 +5,7 @@
     = line_item_f.fields_for :shipment do |shipment|
       .item
         = shipment.label :shipping_method_id
-        = shipment.select :shipping_method_id, []
+        = shipment.select :shipping_method_id, shipping_method_options
         #shipping_spinner{:style => "display:none;"}
           = image_tag "ajax-loader.gif"
         #shipping_default{:style => "display:none;"}

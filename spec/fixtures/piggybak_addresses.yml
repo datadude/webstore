@@ -1,1 +1,25 @@
---- {}
+---
+piggybak_addresses_001:
+  id: '1'
+  firstname: Roberto
+  lastname: Martines
+  address1: 1313 Mocking Bird Ln.
+  address2: ''
+  city: Universal City
+  state_id: '6882'
+  country_id: '405'
+  zip: '91313'
+  created_at: '2015-03-19 02:45:58.188757'
+  updated_at: '2015-03-19 02:45:58.188757'
+piggybak_addresses_002:
+  id: '2'
+  firstname: Roberto
+  lastname: Martines
+  address1: 1313 Mocking Bird Ln.
+  address2: ''
+  city: Universal City
+  state_id: '6882'
+  country_id: '405'
+  zip: '91313'
+  created_at: '2015-03-19 02:45:58.256638'
+  updated_at: '2015-03-19 02:45:58.256638'

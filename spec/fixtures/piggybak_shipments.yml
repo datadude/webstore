@@ -1,1 +1,8 @@
---- {}
+---
+piggybak_shipments_001:
+  id: '1'
+  shipping_method_id: '4'
+  status: new
+  created_at: '2015-03-19 02:45:58.489208'
+  updated_at: '2015-03-19 02:45:58.489208'
+  line_item_id: '2'

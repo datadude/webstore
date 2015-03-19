@@ -15,8 +15,10 @@
           Items: #{@cart.count.to_s}
         .small-4.large-12.columns
           Amount: #{number_to_currency(@cart.total)}
-        .small-4.large-12.columns
+        .small-4.large-12.columns.hide-for-large-only
           =link_to 'Check Out',piggybak.orders_url,{class: 'button radius expand'}
+        .large-12.columns.show-for-large-only
+          =link_to 'Check Out',piggybak.orders_url,{class: 'button radius expand', style: 'margin-top: 1.5em'}
   / End Side Bar
   / Thumbnails
   .large-8.columns

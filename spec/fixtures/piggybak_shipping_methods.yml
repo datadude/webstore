@@ -1,1 +1,11 @@
---- {}
+---
+piggybak_shipping_methods_001:
+  id: '4'
+  description: Standard Shipping
+  klass: "::Piggybak::ShippingCalculator::FlatRate"
+  active: t
+piggybak_shipping_methods_002:
+  id: '5'
+  description: Express Shipping
+  klass: "::Piggybak::ShippingCalculator::FlatRate"
+  active: t

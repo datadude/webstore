@@ -1,1 +1,56 @@
---- {}
+---
+piggybak_line_items_001:
+  id: '1'
+  order_id: '1'
+  quantity: '1'
+  sellable_id: 
+  price: "-18.00"
+  created_at: '2015-03-19 02:45:57.959423'
+  updated_at: '2015-03-19 02:45:58.43455'
+  unit_price: '0.00'
+  description: Payment
+  line_item_type: payment
+piggybak_line_items_002:
+  id: '2'
+  order_id: '1'
+  quantity: '1'
+  sellable_id: 
+  price: '10.00'
+  created_at: '2015-03-19 02:45:57.976979'
+  updated_at: '2015-03-19 02:45:58.472641'
+  unit_price: '0.00'
+  description: Standard Shipping
+  line_item_type: shipment
+piggybak_line_items_003:
+  id: '3'
+  order_id: '1'
+  quantity: '1'
+  sellable_id: '3'
+  price: '1.00'
+  created_at: '2015-03-19 02:45:58.030298'
+  updated_at: '2015-03-19 02:45:58.511322'
+  unit_price: '1.00'
+  description: Table A
+  line_item_type: sellable
+piggybak_line_items_004:
+  id: '4'
+  order_id: '1'
+  quantity: '2'
+  sellable_id: '9'
+  price: '6.00'
+  created_at: '2015-03-19 02:45:58.037968'
+  updated_at: '2015-03-19 02:45:58.543242'
+  unit_price: '3.00'
+  description: Steak knife
+  line_item_type: sellable
+piggybak_line_items_005:
+  id: '5'
+  order_id: '1'
+  quantity: '1'
+  sellable_id: '1'
+  price: '1.00'
+  created_at: '2015-03-19 02:45:58.04939'
+  updated_at: '2015-03-19 02:45:58.57437'
+  unit_price: '1.00'
+  description: Chair number one.
+  line_item_type: sellable
