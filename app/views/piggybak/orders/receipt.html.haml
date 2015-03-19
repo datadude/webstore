@@ -1,3 +1,10 @@
 #receipt
-  %h1 Thanks for your Order
-  = render "details", :order => @order
+  .row
+    .small-12.columns
+      %h1 Thanks for your Order
+      = render "details", :order => @order
+  .row
+    .small-12.columns
+      %ul.button-group.radius
+        %li
+          = link_to "Continue Shopping", cookies['back_to'], class: 'button secondary'
