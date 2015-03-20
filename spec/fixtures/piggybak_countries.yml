@@ -922,7 +922,7 @@ piggybak_countries_154:
   name: British Indian Ocean Territory
   abbr: IO
   active_shipping: f
-  active_billing: t
+  active_billing: f
 piggybak_countries_155:
   id: '331'
   name: Mexico

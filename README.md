@@ -22,7 +22,7 @@ git clone https://github.com/datadude/webstore
 Once you have this repo cloned, have a look at some of the docs listed above and customize to your heart's content!
 
 ## To Do
-Here is a list of suggested improvments left up to you to implement.
+Here is a list of suggested improvements left up to you to implement.
 
 1. Add pagination to list of products on home page.
 2. Implement item "detail" pages with slugs

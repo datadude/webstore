@@ -89,8 +89,8 @@ describe "Shopping Cart" do
     end
 
     it 'should display "checkout" button' do
-      expect(find('div#cart_window a.button').text).to eq 'Check Out'
-      expect(find('div#cart_window a.button')[:href]).to eq piggybak.orders_url
+      expect(find('div#cart_window div.hide-for-large-only a').text).to eq 'Check Out'
+      expect(find('div#cart_window div.hide-for-large-only a')[:href]).to eq piggybak.orders_url
     end
 
   end
