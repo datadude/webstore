@@ -81,6 +81,7 @@ describe "Checkout Page" do
       fill_in :order_shipping_address_attributes_firstname, with: 'Herman'
       fill_in :order_shipping_address_attributes_lastname, with: 'Munster'
       fill_in :order_shipping_address_attributes_address1, with: '1313 Mocking Bird ln.'
+      fill_in :order_shipping_address_attributes_address1, with: 'Suite 13'
       fill_in :order_shipping_address_attributes_city, with: 'Universal Studios'
       select "CA", from: 'order_shipping_address_attributes_state_id'
       select 'United States', from: 'order_shipping_address_attributes_country_id'
@@ -96,11 +97,137 @@ describe "Checkout Page" do
     end
     before :each do
       fill_form
+      page.driver.browser.header('User-Agent', 'capybara_tester')
     end
     it "should fill in the form properly and submit successfully" do
-      page.driver.browser.header('User-Agent', 'capybara_tester')
       click_button 'Checkout'
       expect(page).to have_content 'Thanks for your Order'
+    end
+    describe "User Details" do
+      it "should not allow an empty email address" do
+        fill_in :order_email, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Email can\'t be blank'
+      end
+      it "should not allow an invalid email address" do
+        pending "we need to write a validation for this."
+        fill_in :order_email, with: 'bogus$bogus.com'
+        click_button 'Checkout'
+        expect(page).to have_content 'Email invalid'
+      end
+      it "should not allow an empty phone field" do
+        fill_in :order_phone, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Phone can\'t be blank'
+      end
+
+      it "should not allow a bogus phone number" do
+        pending "we need to write a validation for this."
+        fill_in :order_phone, with: 'this has letters'
+        click_button 'Checkout'
+        expect(page).to have_content 'Phone can\'t be blank'
+      end
+    end
+    describe "Payment" do
+      it "should not allow an empty account field" do
+        fill_in :order_line_items_attributes_0_payment_attributes_number, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Payment number is required'
+      end
+
+      it "should not allow an invalid account number account field" do
+        fill_in :order_line_items_attributes_0_payment_attributes_number, with: '1234'
+        click_button 'Checkout'
+        expect(page).to have_content 'Payment number is not a valid credit card number'
+      end
+      it "should not allow an empty account verification field" do
+        fill_in :order_line_items_attributes_0_payment_attributes_verification_value, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Payment verification value is required'
+      end
+      it "should not allow an invalid account verification field" do
+        fill_in :order_line_items_attributes_0_payment_attributes_verification_value, with: '1111111'
+        click_button 'Checkout'
+        expect(page).to have_content 'Payment verification value should be 3 digits'
+      end
+      it "should not allow a four digit verification code for an amex card" do
+        pending 'need validation for this amex validations have four digits.'
+        fill_in :order_line_items_attributes_0_payment_attributes_verification_value, with: '1111'
+        click_button 'Checkout'
+        expect(page).to have_content 'Thanks for your Order'
+      end
+    end
+    describe "Billing Address" do
+
+      it "should not allow an empty first name field" do
+        fill_in :order_billing_address_attributes_firstname, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Billing address firstname can\'t be blank'
+      end
+
+      it "should not allow an empty last name field" do
+        fill_in :order_billing_address_attributes_lastname, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Billing address lastname can\'t be blank'
+      end
+
+      it "should not allow an empty address1 field" do
+        fill_in :order_billing_address_attributes_address1, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Billing address address1 can\'t be blank'
+      end
+      it "should allow an empty address2 field" do
+        fill_in :order_billing_address_attributes_address2, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Thanks for your Order'
+      end
+      it "should not allow an empty city field" do
+        fill_in :order_billing_address_attributes_city, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Billing address city can\'t be blank'
+      end
+
+      it "should not allow an empty zip field" do
+        fill_in :order_billing_address_attributes_zip, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Billing address zip can\'t be blank'
+      end
+    end
+    
+    describe "Shipping address" do
+      it "should not allow an empty shipping first name field" do
+        fill_in :order_shipping_address_attributes_firstname, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Shipping address firstname can\'t be blank'
+      end
+
+      it "should not allow an empty last name field" do
+        fill_in :order_shipping_address_attributes_lastname, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Shipping address lastname can\'t be blank'
+      end
+
+      it "should not allow an empty address1 field" do
+        fill_in :order_shipping_address_attributes_address1, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Shipping address address1 can\'t be blank'
+      end
+      it "should allow an empty address2 field" do
+        fill_in :order_shipping_address_attributes_address2, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Thanks for your Order'
+      end
+      it "should not allow an empty city field" do
+        fill_in :order_shipping_address_attributes_city, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Shipping address city can\'t be blank'
+      end
+
+      it "should not allow an empty zip field" do
+        fill_in :order_shipping_address_attributes_zip, with: ''
+        click_button 'Checkout'
+        expect(page).to have_content 'Shipping address zip can\'t be blank'
+      end
     end
 
   end
