@@ -49,11 +49,60 @@ describe "Checkout Page" do
     it "should have a select box with state abbreviations" do
       expect(find(:xpath,"//div[@id='billing_address']//select[@id='order_billing_address_attributes_state_id']").text).to eq "AK AL AR AS AZ CA CO CT DC DE FL GA GU HI IA ID IL IN KS KY LA MA MD ME MI MN MO MP MS MT NC ND NE NH NJ NM NV NY OH OK OR PA PR RI SC SD TN TX UM UT VA VI VT WA WI WV WY"
     end
+
+    it "should have a select box with US and Canada" do
+      expect(find(:xpath,"//div[@id='billing_address']//select[@id='order_billing_address_attributes_country_id']").text).to eq "Canada United States"
+    end
   end
   describe "Shipping Address" do
     it "should have a select box with state abbreviations" do
-      expect(find(:xpath,"//div[@id='shipping_address']//select[@id='order_billing_address_attributes_state_id']").text).to eq "AK AL AR AS AZ CA CO CT DC DE FL GA GU HI IA ID IL IN KS KY LA MA MD ME MI MN MO MP MS MT NC ND NE NH NJ NM NV NY OH OK OR PA PR RI SC SD TN TX UM UT VA VI VT WA WI WV WY"
+      expect(find(:xpath,"//div[@id='shipping_address']//select[@id='order_shipping_address_attributes_state_id']").text).to eq "AK AL AR AS AZ CA CO CT DC DE FL GA GU HI IA ID IL IN KS KY LA MA MD ME MI MN MO MP MS MT NC ND NE NH NJ NM NV NY OH OK OR PA PR RI SC SD TN TX UM UT VA VI VT WA WI WV WY"
     end
+
+    it "should have a select box with US and Canada" do
+      expect(find(:xpath,"//div[@id='shipping_address']//select[@id='order_shipping_address_attributes_country_id']").text).to eq "Canada United States"
+    end
+  end
+
+  describe "Shipping Option" do
+    it "should have a shipping option select with two choices" do
+      expect(find(:xpath,"//div[@id='shipping']//select[@id='order_line_items_attributes_1_shipment_attributes_shipping_method_id']").text).to eq "Standard Shipping Express Shipping"
+    end
+  end
+
+  describe "Validations" do
+    def fill_form
+      fill_in :order_email, with: 'roberto@example.com'
+      fill_in :order_phone, with: '1231231234'
+      fill_in :order_line_items_attributes_0_payment_attributes_number, with: '4111111111111111'
+      fill_in :order_line_items_attributes_0_payment_attributes_verification_value, with: '111'
+      select '4', from: 'order_line_items_attributes_0_payment_attributes_month'
+      select 2016, from: 'order_line_items_attributes_0_payment_attributes_year'
+      fill_in :order_shipping_address_attributes_firstname, with: 'Herman'
+      fill_in :order_shipping_address_attributes_lastname, with: 'Munster'
+      fill_in :order_shipping_address_attributes_address1, with: '1313 Mocking Bird ln.'
+      fill_in :order_shipping_address_attributes_city, with: 'Universal Studios'
+      select "CA", from: 'order_shipping_address_attributes_state_id'
+      select 'United States', from: 'order_shipping_address_attributes_country_id'
+      fill_in :order_shipping_address_attributes_zip, with: '91313'
+      fill_in :order_billing_address_attributes_firstname, with: 'Herman'
+      fill_in :order_billing_address_attributes_lastname, with: 'Munster'
+      fill_in :order_billing_address_attributes_address1, with: '1313 Mocking Bird ln.'
+      fill_in :order_billing_address_attributes_city, with: 'Universal Studios'
+      select "CA", from: 'order_billing_address_attributes_state_id'
+      fill_in :order_billing_address_attributes_zip, with: '91313'
+      select 'Standard Shipping', from: "order_line_items_attributes_1_shipment_attributes_shipping_method_id"
+      select 'United States', from: 'order_billing_address_attributes_country_id'
+    end
+    before :each do
+      fill_form
+    end
+    it "should fill in the form properly and submit successfully" do
+      page.driver.browser.header('User-Agent', 'capybara_tester')
+      click_button 'Checkout'
+      expect(page).to have_content 'Thanks for your Order'
+    end
+
   end
 
 end
